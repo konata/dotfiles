@@ -1,0 +1,19 @@
+# Core
+brew "antigen"
+brew "ripgrep"
+brew "zsh-history-substring-search"
+brew "fzf"
+brew "pidcat"
+brew "tldr"
+brew "wget"
+brew "cloc"
+brew "neovim"
+
+# Essential
+brew "ldid"
+brew "bundletool"
+brew "libusbmuxd"
+brew "libmobiledevice"
+brew "ammonite-repl"
+
+

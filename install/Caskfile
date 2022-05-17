@@ -1,0 +1,18 @@
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+
+
+cask "dropbox"
+cask "firefox"
+cask "google-chrome"
+cask "visual-studio-code"
+cask 'clashx'
+cask 'telegram'
+cask 'lookin'
+cask 'openinterminal-lite'
+cask 'yuque'
+cask 'warp'
+cask 'jetbrains-toolbox'
+cask 'macvim'

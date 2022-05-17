@@ -1,0 +1,28 @@
+alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"                  # Go to previous dir with -
+alias cd.='cd $(readlink -f .)'    # Go to real dir (i.e. if current dir is linked)
+
+
+# shortcuts
+alias reload="source ~/.zshrc"
+alias aliases="alias | sed 's/=.*//'"
+alias functions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"
+alias paths='echo -e ${PATH//:/\\n}'
+
+
+# compability
+alias ag=rg
+alias op="open"
+alias ff=fzf
+alias cask="brew cask"
+alias zip="zip -x *.DS_Store -x *__MACOSX* -x *.AppleDouble*"
+
+
+# copy pwd to clipboard
+alias cpwd="pwd|tr -d '\n'|pbcopy"
+

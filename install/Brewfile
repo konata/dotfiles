@@ -8,6 +8,7 @@ brew "tldr"
 brew "wget"
 brew "cloc"
 brew "neovim"
+brew 'zplug'
 
 # Essential
 brew "ldid"

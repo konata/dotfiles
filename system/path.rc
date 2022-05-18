@@ -9,6 +9,7 @@ prepend-path() {
 # Retrieve it from getconf, otherwise it's just current $PATH
 is-executable getconf && PATH=$($(command -v getconf) PATH)
 
+$DOTFILES_DIR=$HOME/dotfiles
 export HOMEBREW_PREFIX=$($DOTFILES_DIR/bin/is-supported $DOTFILES_DIR/bin/is-arm64 /opt/homebrew /usr/local)
 
 ## prepend necessaries
@@ -16,9 +17,7 @@ prepend-path "/bin"
 prepend-path "/usr/bin"
 prepend-path "/usr/local/bin"
 prepend-path "$HOMEBREW_PREFIX/bin"
-
-prepend-path "$DOTFILES_DIR/bin"
-prepend-path "$HOME/.bin"
+prepend-path "$HOME/bin"
 prepend-path "/sbin"
 prepend-path "/usr/sbin"
 prepend-path "/usr/local/sbin"

@@ -19,7 +19,7 @@
 [color]
 	ui = true
 [core]
-	excludesfile = ~/.config/git/ignore
+	excludesfile = ~/ignore
 [init]
 	defaultBranch = master
 [diff]

@@ -1,7 +1,6 @@
 SHELL = /bin/zsh
 DOTFILES_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 PATH := $(DOTFILES_DIR)/bin:$(PATH)
-HOMEBREW_PREFIX := $(shell bin/is-supported bin/is-arm64 /opt/homebrew /usr/local)
 export ACCEPT_EULA=Y
 
 all: macos

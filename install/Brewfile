@@ -14,7 +14,7 @@ brew 'zplug'
 brew "ldid"
 brew "bundletool"
 brew "libusbmuxd"
-brew "libmobiledevice"
+brew "libimobiledevice"
 brew "ammonite-repl"
 
 

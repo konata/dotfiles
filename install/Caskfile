@@ -4,7 +4,6 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 
 
-cask "dropbox"
 cask "firefox"
 cask "google-chrome"
 cask "visual-studio-code"

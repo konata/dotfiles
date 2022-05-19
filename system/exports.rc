@@ -1,6 +1,4 @@
-export ANDROID_HOME=$HOME/Library/Android/sdk
 export JEB_HOME=$HOME/.cask/jeb4
-export THEOS_DEVICE_IP=miziku
 
 
 

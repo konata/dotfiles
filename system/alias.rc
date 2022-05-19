@@ -24,4 +24,3 @@ alias zip="zip -x *.DS_Store -x *__MACOSX* -x *.AppleDouble*"
 
 # copy pwd to clipboard
 alias cpwd="pwd|tr -d '\n'|pbcopy"
-

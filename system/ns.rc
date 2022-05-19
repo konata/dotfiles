@@ -1,6 +1,9 @@
-########################
-# iOS Re 
-########################
+############################################
+# iOS / lldb / theos / cycript / frida / etc
+############################################
+
+export THEOS=$HOME/theos
+export THEOS_DEVICE_IP=miziku
 function forw() {
   iproxy 2222 22 &
   iproxy 1234 1234 &

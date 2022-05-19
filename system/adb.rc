@@ -2,6 +2,14 @@
 # Adb Hacking
 ######################
 
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export NDK_HOME=$ANDROID_HOME/ndk
+
+prepend-path $ANDROID_HOME/platform-tools
+prepend-path $ANDROID_HOME/build-tools/31.0.0
+prepend-path $ANDROID_HOME/cmdline-tools/latest/bin
+
+
 # dump all activity stacks
 function tasks() {
     adb shell dumpsys activity activities |grep "\bHist\b"

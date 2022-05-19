@@ -1,0 +1,3 @@
+
+export HOMEBREW_PREFIX=$($DOTFILES_DIR/bin/is-supported $DOTFILES_DIR/bin/is-arm64 /opt/homebrew /usr/local)
+prepend-path "$HOMEBREW_PREFIX/bin"

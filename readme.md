@@ -1,28 +1,28 @@
 # Dotfiles
 
-## My opinionated Dotfiles, targets macOS & mobile development
+My opinionated Dotfiles, targets on macOS & mobile development
 
-- Makefile
+## Makefile
 
-  provide all tasks to setup a new mac, ranging download application to software configuration link
+providing tasks to setup a new mac, ranging from download application to configuration file link
 
-- bin
+### bin
 
-  utilities for env detects, you may also put your env independent little scripts here,
-  for env dependent ones, put them under $HOME/exec would be a better choice, which is also added to $PATH in `system/path.rc`
+utilities for env detects, you may also put your path independent little scripts here,
+for path dependent ones, put them under $HOME/exec would be a better choice, which is also added to $PATH in `system/path.rc`, but not tracked by git
 
-- config
+### config
 
-  all things in this folder should be linked directly to $HOME via `link` task
+including files which should be directly linked to `$HOME` via `link` task
 
-- install
+### install
 
-  your brew / cask / npm / conda / cargo packages should go here via `packages` task
+here goes your scripts for package manager (brew / cask / npm / conda / cargo) to restore all your global packages via `package` task
 
-- macos
+### macos
 
-  macos defaults, run it directly on your own interests
+macos preference setting , run it directly on your own interests
 
-- system
+### system
 
-  configurations sort by purpose,
+shell configurations sort by category

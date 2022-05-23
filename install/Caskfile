@@ -8,6 +8,7 @@ cask "firefox"
 cask "google-chrome"
 cask "visual-studio-code"
 cask 'clashx'
+cask 'ludwig'
 cask 'telegram'
 cask 'lookin'
 cask 'openinterminal-lite'
@@ -15,3 +16,4 @@ cask 'yuque'
 cask 'warp'
 cask 'jetbrains-toolbox'
 cask 'macvim'
+cask 'neovide'

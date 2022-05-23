@@ -24,3 +24,9 @@ alias zip="zip -x *.DS_Store -x *__MACOSX* -x *.AppleDouble*"
 
 # copy pwd to clipboard
 alias cpwd="pwd|tr -d '\n'|pbcopy"
+
+function lvimr(){
+	vimr --nvim -u ~/.local/share/lunarvim/lvim/init.lua --cmd "set runtimepath+=~/.local/share/lunarvim/lvim" "@"
+}
+
+

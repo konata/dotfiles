@@ -48,6 +48,12 @@ function pulls() {
 }
 
 
+# list all receivers registerd for designated action
+function recvs() {
+  adb shell cmd package query-receivers --components -a $@
+}
+
+
 ########################
 # Android Development
 ########################
@@ -56,15 +62,3 @@ function pulls() {
 function instr() {
   systrace -t 8 gfx input view sched freq wm am hwui workq res dalvik sync disk load perf hal rs idle mmc
 }
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,2 +1,1 @@
  [ -f $HOME/.cargo/env ] && source $HOME/.cargo/env
-export RUSTFLAGS="$RUSTFLAGS -A dead_code"

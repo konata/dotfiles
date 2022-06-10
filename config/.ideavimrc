@@ -1,0 +1,6 @@
+imap jj <ESC>
+set ideajoin
+set clipboard=ideaput
+map f :action AceAction<CR>
+map F :action AceTargetAction<CR>
+map g :action AceLineAction<CR>

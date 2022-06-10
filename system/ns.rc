@@ -3,7 +3,7 @@
 ############################################
 
 export THEOS=$HOME/theos
-export THEOS_DEVICE_IP=miziku
+export THEOS_DEVICE_IP=mizuki
 function forw() {
   iproxy 2222 22 &
   iproxy 1234 1234 &

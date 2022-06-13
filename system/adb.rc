@@ -10,6 +10,10 @@ prepend-path $ANDROID_HOME/build-tools/31.0.0
 prepend-path $ANDROID_HOME/cmdline-tools/latest/bin
 
 
+function misc() {
+  open "https://odocs.myoas.com/docs/XYtKJvvdqDkPrcJH"
+}
+
 # dump all activity stacks
 function tasks() {
     adb shell dumpsys activity activities |grep "\bHist\b"

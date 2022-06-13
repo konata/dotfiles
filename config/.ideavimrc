@@ -1,6 +1,6 @@
 imap jj <ESC>
 set ideajoin
 set clipboard=ideaput
-map f :action AceAction<CR>
-map F :action AceTargetAction<CR>
-map g :action AceLineAction<CR>
+map g<Space> :action AceAction<CR>
+map F<Space> :action AceTargetAction<CR>
+map f<Space> :action AceLineAction<CR>

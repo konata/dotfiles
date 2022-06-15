@@ -30,6 +30,13 @@ function lvimr(){
 }
 
 
+# download some link via remote server
+function download() {
+  ssh alger@workstation "wget -O - '$1' " > $2
+}
+
+
+
 # alias for cask launchers
 alias jeb=$HOME/.cask/jeb/jeb_macos.sh
 alias j4=$HOME/.cask/jeb4/j4.sh

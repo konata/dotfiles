@@ -11,7 +11,7 @@ prepend-path $ANDROID_HOME/cmdline-tools/latest/bin
 
 
 function misc() {
-  open "https://odocs.myoas.com/docs/XYtKJvvdqDkPrcJH"
+  open "https://www.yuque.com/natsuki-rwvsu/mrqvcp/ytzg71"
 }
 
 # dump all activity stacks

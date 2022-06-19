@@ -23,3 +23,5 @@ do
 	source "$DOTFILES/system/$file.rc"
 done
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

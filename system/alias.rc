@@ -42,4 +42,10 @@ alias jeb=$HOME/.cask/jeb/jeb_macos.sh
 alias j4=$HOME/.cask/jeb4/j4.sh
 
 
+# reset display settings
+function rst() {
+  displayplacer "id:1ED7BF36-74AA-223D-6617-871C836DDAE3 res:1080x1920 hz:60 color_depth:8 scaling:off origin:(0,0) degree:90" "id:40394CF4-C586-79AE-1199-6AA0914ECE2D res:1920x1080 hz:60 color_depth:8 scaling:off origin:(-1920,448) degree:0" &
+} 
+
+
 

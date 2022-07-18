@@ -1,4 +1,4 @@
-export JEB_HOME=$HOME/.cask/jeb4
+export JEB_HOME=$HOME/cask/jeb4
 export EDITOR=lvim
 
 

@@ -1,0 +1,5 @@
+export BURP_HOME=$HOME/cask/bs
+
+function bs() {
+  "$HOME/.sdkman/candidates/java/17.0.5-tem/bin/java" -javaagent:$BURP_HOME/loader.jar --illegal-access=permit -Dfile.encoding=utf-8 -noverify -jar $BURP_HOME/bs.jar
+}

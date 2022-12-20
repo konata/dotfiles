@@ -18,9 +18,13 @@ zplug load
 
 
 DOTFILES=$HOME/dotfiles
-for file in "exports" "path" "alias" "brew" "adb" "ns" "rust" "conda" "sdkman" "fzf" "go" "ghc"
+for file in "exports" "path" "alias" "brew" "adb" "ns" "rust" "conda" "sdkman" "fzf" "go" "ghc" "bs"
 do
 	source "$DOTFILES/system/$file.rc"
 done
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "/$HOME/.sdkman/bin/sdkman-init.sh"

@@ -7,6 +7,7 @@ export NDK_HOME=$ANDROID_HOME/ndk
 
 prepend-path $ANDROID_HOME/platform-tools
 prepend-path $ANDROID_HOME/build-tools/31.0.0
+prepend-path $ANDROID_HOME/emulator/
 prepend-path $ANDROID_HOME/cmdline-tools/latest/bin
 
 

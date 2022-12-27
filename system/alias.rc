@@ -20,6 +20,7 @@ alias op="open"
 alias ff=fzf
 alias cask="brew cask"
 alias zip="zip -x *.DS_Store -x *__MACOSX* -x *.AppleDouble*"
+alias burp="java -noverify -javaagent:$HOME/cask/burp/loader.jar -jar $HOME/cask/burp/burp.jar"
 
 
 # copy pwd to clipboard
@@ -35,12 +36,8 @@ function download() {
   ssh alger@workstation "wget -O - '$1' " > $2
 }
 
-
-
 # alias for cask launchers
-alias jeb=$HOME/cask/jeb/jeb_macos.sh
-alias j4=$HOME/cask/jeb4/j4.sh
-
+alias jeb="sh $HOME/cask/jeb4/jeb_macos.sh"
 
 # reset display settings
 function rst() {

@@ -18,7 +18,7 @@ zplug load
 
 
 DOTFILES=$HOME/dotfiles
-for file in "exports" "path" "alias" "brew" "adb" "ns" "rust" "conda" "sdkman" "fzf" "go" "ghc" "bs"
+for file in "exports" "path" "alias" "brew" "adb" "ns" "rust" "conda" "sdkman" "fzf" "go" "ghc" "bs" "gcloud"
 do
 	source "$DOTFILES/system/$file.rc"
 done

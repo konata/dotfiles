@@ -1,0 +1,5 @@
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/exec/gcl/path.zsh.inc" ]; then . "$HOME/exec/gcl/path.zsh.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f "$HOME/exec/gcl/completion.zsh.inc" ]; then . "$HOME/exec/gcl/completion.zsh.inc"; fi

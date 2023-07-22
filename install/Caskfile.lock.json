@@ -1,0 +1,113 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/cask": {
+        "revision": "9de59190d874140032c06d83bfa6803a20a1a786"
+      },
+      "homebrew/cask-fonts": {
+        "revision": "5213034442c299c6321e36064c195ea0b6fe8b68"
+      },
+      "homebrew/cask-versions": {
+        "revision": "3c94e2a5b2ef4fec660d2b1b98ce072b2a2f74de"
+      }
+    },
+    "cask": {
+      "firefox": {
+        "version": "115.0.2",
+        "options": {
+          "full_name": "firefox"
+        }
+      },
+      "google-chrome": {
+        "version": "115.0.5790.102",
+        "options": {
+          "full_name": "google-chrome"
+        }
+      },
+      "visual-studio-code": {
+        "version": "1.80.1",
+        "options": {
+          "full_name": "visual-studio-code"
+        }
+      },
+      "clashx": {
+        "version": "1.116.3",
+        "options": {
+          "full_name": "clashx"
+        }
+      },
+      "telegram": {
+        "version": "9.7,249978",
+        "options": {
+          "full_name": "telegram"
+        }
+      },
+      "lookin": {
+        "version": "1.0.1",
+        "options": {
+          "full_name": "lookin"
+        }
+      },
+      "openinterminal-lite": {
+        "version": "1.2.5",
+        "options": {
+          "full_name": "openinterminal-lite"
+        }
+      },
+      "warp": {
+        "version": "0.2023.07.18.08.03.stable_00",
+        "options": {
+          "full_name": "warp"
+        }
+      },
+      "jetbrains-toolbox": {
+        "version": "1.28.1,1.28.1.15219",
+        "options": {
+          "full_name": "jetbrains-toolbox"
+        }
+      },
+      "macvim": {
+        "version": "177",
+        "options": {
+          "full_name": "macvim"
+        }
+      },
+      "neovide": {
+        "version": "0.10.4",
+        "options": {
+          "full_name": "neovide"
+        }
+      },
+      "iterm2": {
+        "version": "3.4.19",
+        "options": {
+          "full_name": "iterm2"
+        }
+      },
+      "font-hack-nerd-font": {
+        "version": "3.0.2",
+        "options": {
+          "full_name": "font-hack-nerd-font"
+        }
+      },
+      "raycast": {
+        "version": "1.55.2",
+        "options": {
+          "full_name": "raycast"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "ventura": {
+        "HOMEBREW_VERSION": "4.1.0",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "14.3.1.0.1.1683849156",
+        "Xcode": "14.3",
+        "macOS": "13.4.1"
+      }
+    }
+  }
+}

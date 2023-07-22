@@ -1,5 +1,5 @@
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
+# tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 
@@ -8,14 +8,13 @@ cask "firefox"
 cask "google-chrome"
 cask "visual-studio-code"
 cask 'clashx'
-cask 'ludwig'
 cask 'telegram'
 cask 'lookin'
 cask 'openinterminal-lite'
-cask 'yuque'
 cask 'warp'
 cask 'jetbrains-toolbox'
 cask 'macvim'
 cask 'neovide'
 cask 'iterm2'
 cask 'font-hack-nerd-font'
+cask 'raycast'

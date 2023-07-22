@@ -27,4 +27,3 @@ brew-packages: brew
 	brew bundle --file=$(DOTFILES_DIR)/install/Brewfile || true
 cask-apps: brew
 	brew bundle --file=$(DOTFILES_DIR)/install/Caskfile || true
-	xattr -d -r com.apple.quarantine ~/Library/QuickLook

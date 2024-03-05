@@ -3,12 +3,13 @@
 ######################
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
-export NDK_HOME=$ANDROID_HOME/ndk
+export NDK_HOME=$ANDROID_HOME/ndk/25.2.9519653
 
 prepend-path $ANDROID_HOME/platform-tools
-prepend-path $ANDROID_HOME/build-tools/31.0.0
+prepend-path $ANDROID_HOME/build-tools/34.0.0
 prepend-path $ANDROID_HOME/emulator/
 prepend-path $ANDROID_HOME/cmdline-tools/latest/bin
+prepend-path $ANDROID_HOME/tools/bin
 
 
 function misc() {
@@ -42,7 +43,7 @@ function frag() {
 
 # show fatal logcats  
 function fatal() {
-  adb logcat |grep -i 'fatal\|androidruntime\|uncaught'
+  adb logcat |grep -i 'fatal\|androidruntime\|uncaught\|javabinder'
 }
 
 # pull the font most apk
@@ -72,5 +73,14 @@ function instr() {
 # make the device debuggable for all process
 function make_debuggable() {
   adb shell "su -c 'magisk resetprop ro.debuggable 1;stop;start;'"
+}
+
+
+# list all tasks & task fragments
+function tf() {
+  activities=$(adb shell dumpsys activity activities)
+  line=$(echo "$activities" |grep -n "Application tokens in top down Z order" | cut -d ":" -f 1)
+  result=$(echo "$activities" | sed -n "$((line + 1)),$ p" |grep "\* ")
+  echo $result
 }
 

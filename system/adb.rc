@@ -75,12 +75,7 @@ function make_debuggable() {
   adb shell "su -c 'magisk resetprop ro.debuggable 1;stop;start;'"
 }
 
-
 # list all tasks & task fragments
 function tf() {
-  activities=$(adb shell dumpsys activity activities)
-  line=$(echo "$activities" |grep -n "Application tokens in top down Z order" | cut -d ":" -f 1)
-  result=$(echo "$activities" | sed -n "$((line + 1)),$ p" |grep "\* ")
-  echo $result
+  adb shell dumpsys window  |ag -i "\* (TaskFragment|Task|ActivityRecord)"
 }
-
